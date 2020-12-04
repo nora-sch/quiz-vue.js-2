@@ -1,18 +1,28 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="../assets/quizz.png">
+    <Quizzs msg="Let's solve the quiz!"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import Quizzs from '@/components/Quizzs.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Quizzs
+
   }
 }
 </script>
+<style>
+body{
+  background-color: #2c3e50 !important;
+  color:white;}
+.home>img{
+  max-width:400px;
+}
+</style>
